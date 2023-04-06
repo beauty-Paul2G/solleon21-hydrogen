@@ -1,0 +1,49 @@
+{
+  "biography": {
+    "title": "Biografía",
+    "body": [
+      {
+        "type": "paragraph",
+        "content": "Sol León, es una exitosa emprendedora en el área de la moda, especialista en prendas de moldeo con reconocimiento mundial y que fundó su propia empresa, Sol Beauty and Care, en 2018."
+      },
+      {
+        "type": "paragraph",
+        "content": "Marisol López León nació en el seno de una familia trabajadora en Culiacán, Sinaloa. Desde los 7 años mostró gusto y habilidad para los negocios gracias a la mentalidad visionaria que le inculcó su padre, EPD. A los trece años, Sol León descubrió el mundo de las prendas de moldeo y se convirtió en una consumidora ávida de dichas prendas. Era tan grande su gusto que desde entonces empezó a coleccionar y usar todo tipo de fajas de distintas marcas."
+      },
+      {
+        "type": "paragraph",
+        "content": "En el mismo año, mientras estudiaba la secundaria, Sol León tenía una clase de corte y confección, donde aprendió a usar una máquina de coser. Fue en ese momento cuando comenzó a modificar sus propias fajas, siempre preguntándose ¿Por qué NO existe una faja para mujeres con mi tipo de cuerpo?. Ella siempre ha sido una mujer muy curvilínea, debido a eso nunca pudo encontrar una faja que le ajustara del todo bien a su silueta tan particular. Fue entonces que, sin imaginar el futuro que le esperaba, siendo tan solo una adolescente comenzó la creación de su famosa faja RELOJ DE ARENA."
+      },
+      {
+        "type": "paragraph",
+        "content": "A los dieciocho años tuvo a su primera hija, Miranda; 5 años después tuvo a su segunda hija Luciana. Durante esa época Sol León, seguía trabajando en la búsqueda de cada elemento para la creación de su exclusiva línea de fajas de moldeo. En el periodo 2016 - 2018 , Sol León viajó a Colombia para iniciar con el desarrollo de “La faja Perfecta”. Fue a finales del 2017 cuando culminó la elaboracion de su primera faja. Apoyada y motivada por su esposo, en febrero del 2018 finalmente logró iniciar la producción y comercialización de su propia marca de prendas de moldeo llamado “Sol Beauty and Care”. En 2019 la joven empresa despegó a nivel global."
+      },
+      {
+        "type": "paragraph",
+        "content": "Actualmente Sol León se dedica a revolucionar las prendas que su empresa realiza, creando además de fajas, innovadoras prendas de moda con moldeo inteligente integrado."
+      }
+    ]
+  },
+  "trajectory": {
+    "title": "Trayectoria",
+    "body": [
+      {
+        "type": "paragraph",
+        "content": "A los 29 años decidió emprender en el mundo de la moda, especializándose en prendas de moldeo, convirtiéndose así en una reconocida creadora a nivel internacional. Su primera prenda (cinturilla de Sol Beauty and Care) se realizó en 2018."
+      },
+      {
+        "type": "paragraph",
+        "content": "Tanto fue su éxito que desde el 2018, la marca se comercializa en los 5 continentes, ha llegado a más 46 países y actualmente cuenta con 22 boutiques ubicadas en Estados Unidos de América y México."
+      },
+      {
+        "type": "list",
+        "content": [
+          "En 2019, presentó su linea deportiva con gran éxito.",
+          "En 2020, presentó su línea de Jeans, de la cual fue un éxito total.",
+          "En 2021 presentó su línea de swimwear que también fue todo un éxito.",
+          "En 2021 presentó la innovadora línea de prendas de moldeo exteriores, iniciándola con el increíble LUXURY BOOTY que, cómo era de esperarse, se sumó a la lista de éxitos en su carrera en la industria de el moldeo."
+        ]
+      }
+    ]
+  }
+}

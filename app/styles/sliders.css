@@ -1,0 +1,79 @@
+  /*--------------------------Carrousel-------------------------------*/
+.carrousel-slider {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 24/15;
+  }
+
+  .carrousel-slide {
+    cursor: pointer;
+    width: 40%;
+    min-width: 270px;
+    position: absolute;
+    transition: all ease 1000ms;
+  }
+
+  .carrousel-focused-slide {
+    z-index: 10;
+  }
+
+  .carrousel-non-visible-slide {
+    position: fixed;
+    opacity: 0;
+    z-index: 4;
+    transform: scale(0.4);
+  }
+
+  .carrousel-previous-slide {
+    filter: brightness(0.5);
+    z-index: 5;
+    transform: scale(0.4) rotate3d(0, 1, 0, 60deg) translate(-160%);
+  }
+
+  .carrousel-next-slide {
+    filter: brightness(0.5);
+    z-index: 5;
+    transform: scale(0.4) rotate3d(0, 1, 0, -60deg) translate(160%);
+  }
+
+  @media (max-width: 768px) {
+    .carrousel-slider {
+      height: fit-content;
+      aspect-ratio: none;
+    }
+  }
+
+  /*--------------------------Banner-------------------------------*/
+  .banner-slider {
+    width: 100%;
+    aspect-ratio: 401/210;
+  }
+
+  .banner-slide {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    transition: ease-out 600ms;
+  }
+
+  .banner-focused-slide {
+    z-index: 10;
+  }
+
+  .banner-non-visible-slide {
+    opacity: 0;
+    z-index: 4;
+  }
+
+  .banner-previous-slide {
+    filter: brightness(0.5);
+    z-index: 5;
+  }
+
+  .banner-next-slide {
+    filter: brightness(0.5);
+    z-index: 5;
+  }
