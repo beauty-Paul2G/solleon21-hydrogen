@@ -1,17 +1,17 @@
   /*--------------------------Carrousel-------------------------------*/
 .carrousel-slider {
     position: relative;
+    perspective: 1800px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    aspect-ratio: 24/15;
+    height: 600px;
   }
 
   .carrousel-slide {
     cursor: pointer;
-    width: 40%;
-    min-width: 270px;
+    height: 600px;
     position: absolute;
     transition: all ease 1000ms;
   }
@@ -30,19 +30,30 @@
   .carrousel-previous-slide {
     filter: brightness(0.5);
     z-index: 5;
-    transform: scale(0.4) rotate3d(0, 1, 0, 60deg) translate(-160%);
+    transform: scale(0.4) rotate3d(0, 1, 0, 60deg) translate(-200%);
   }
 
   .carrousel-next-slide {
     filter: brightness(0.5);
     z-index: 5;
-    transform: scale(0.4) rotate3d(0, 1, 0, -60deg) translate(160%);
+    transform: scale(0.4) rotate3d(0, 1, 0, -60deg) translate(200%);
   }
 
   @media (max-width: 768px) {
+    .carrousel-slide {
+      height: 350px;
+    }
+
     .carrousel-slider {
-      height: fit-content;
-      aspect-ratio: none;
+      height: 350px;
+    }
+
+    .carrousel-previous-slide {
+      transform: scale(0.4) rotate3d(0, 1, 0, 60deg) translate(-230%);
+    }
+  
+    .carrousel-next-slide {
+      transform: scale(0.4) rotate3d(0, 1, 0, -60deg) translate(230%);
     }
   }
 

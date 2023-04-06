@@ -1,6 +1,6 @@
-export function TextSection({section}) {
+export function TextSection({section, id}) {
   return (
-    <div className={`w-full max-w-7xl px-12`}>
+    <div className={`w-full`} id={id}>
       <h1 className={`text-3xl mb-3 uppercase text-center sm:text-left`}>
         {section.title}
       </h1>

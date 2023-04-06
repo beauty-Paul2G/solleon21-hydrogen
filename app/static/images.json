@@ -1,0 +1,13 @@
+{
+  "modelsClothes": [
+    {"description": "Cinturilla", "url": "https://www.solleon21.com/wp-content/uploads/2021/09/1d.jpg"},
+    {"description": "Jeans Push Up Light Rose", "url": "https://www.solleon21.com/wp-content/uploads/2021/09/1c.jpg"},
+    {"description": "Set Swimwear Roar", "url": "https://www.solleon21.com/wp-content/uploads/2021/09/1b.jpg"},
+    {"description": "Legging Luxury booty", "url": "https://www.solleon21.com/wp-content/uploads/2021/09/1a.jpg"}
+  ],
+  "banner": [
+    {"description": "", "url": "https://cdn.shopify.com/s/files/1/0300/5926/6141/files/venus1_espanol_x1024.jpg?v=1677703012"},
+    {"description": "", "url": "https://cdn.shopify.com/s/files/1/0300/5926/6141/files/new_control_swimsuit_espanol_x1920.jpg?v=1677703153"},
+    {"description": "", "url": "https://cdn.shopify.com/s/files/1/0300/5926/6141/files/deluxe_nueva_linea_x1920.jpg?v=1672165500"}
+  ]
+}

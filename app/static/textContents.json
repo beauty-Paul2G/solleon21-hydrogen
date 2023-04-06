@@ -45,5 +45,22 @@
         ]
       }
     ]
+  },
+  "modelsclothes": {
+    "title": "Prendas de Modelo",
+    "body": [
+      {
+        "type": "paragraph",
+        "content": "Sol León actualmente ha posicionado a Sol Beauty and Care como una marca de lujo y moldeo. Por esta razón, las redes sociales de Sol León y Sol Beauty and Care, junto con su equipo de influencers han llegado a 35 millones de personas (@solleon21)."
+      },
+      {
+        "type": "paragraph",
+        "content": "A través del tiempo, Sol León ha desarrollado distintas prendas que se han reconocido a nivel internacional. Actualmente lleva creadas más de 100 prendas de moldeo, causando un revuelo internacional, destacando la icónica faja RELOJ DE ARENA, única faja en el mundo con 81 tallas disponibles por modelo (media pierna, rodilla, negra, beige, etc.)."
+      },
+      {
+        "type": "paragraph",
+        "content": "Tal como la joven adolescente de 13 años un día lo soñó y lo creó, hoy ya existe una faja para mujeres con su tipo de cuerpo."
+      }
+    ]
   }
 }

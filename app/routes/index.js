@@ -2,25 +2,13 @@ import {useLoaderData, Link} from '@remix-run/react';
 import {Image} from '@shopify/hydrogen';
 import {Slider} from '~/components/Slider';
 import {TextSection} from '../components/TextSection.jsx';
+import {GoldenLine} from '~/components/Decorative/GoldenLine.jsx';
 import textContents from '../static/textContents.json';
-
-const forCarrousel = [
-  'https://cdn.shopify.com/s/files/1/0300/5926/6141/products/MildredNegro1_1600x1600.png?v=1678405118',
-  'https://cdn.shopify.com/s/files/1/0300/5926/6141/products/supportbrabeige1_1600x1600.jpg?v=1679079632',
-  'https://cdn.shopify.com/s/files/1/0300/5926/6141/products/rose_chalecoextremo1.jpg?v=1680708387',
-  'https://cdn.shopify.com/s/files/1/0300/5926/6141/products/Mildredterracota1_1600x1600.png?v=1678404455',
-  'https://cdn.shopify.com/s/files/1/0300/5926/6141/products/NyStyle_Mesadetrabajo1_1600x1600.png?v=1677869117',
-];
-
-const forBanner = [
-  'https://cdn.shopify.com/s/files/1/0300/5926/6141/files/venus1_espanol_x1024.jpg?v=1677703012',
-  'https://cdn.shopify.com/s/files/1/0300/5926/6141/files/new_control_swimsuit_espanol_x1920.jpg?v=1677703153',
-  'https://cdn.shopify.com/s/files/1/0300/5926/6141/files/deluxe_nueva_linea_x1920.jpg?v=1672165500',
-];
+import {banner, modelsClothes} from "../static/images.json"
 
 export const meta = () => {
   return {
-    title: 'Hydrogen',
+    title: 'Sol León',
     description: 'A custom storefront powered by Hydrogen',
   };
 };
@@ -33,11 +21,14 @@ export default function Index() {
   const {collections} = useLoaderData();
   return (
     <section className="flex items-center flex-col gap-4">
-      <Slider imageList={forBanner} type="banner" />
-      <div className={`flex flex-col gap-12 py-12 max-w-7xl`}>
-        <TextSection section={textContents['biography']} />
-        <Slider imageList={forCarrousel} type="carrousel"></Slider>
-        <TextSection section={textContents['trajectory']} />
+      <Slider imageList={banner} type="banner"/>
+      <div className={`flex flex-col gap-12 p-12 max-w-7xl`}>
+        <TextSection section={textContents['biography']} id={"biografia"}/>
+        <GoldenLine />
+        <TextSection section={textContents['trajectory']} id={`trayectoria`}/>
+        <GoldenLine />
+        <TextSection section={textContents['modelsclothes']}  id={`prendasdemodelo`} />
+        <Slider imageList={modelsClothes} type="carrousel" showDescriptions/>
         <div className={`hidden p-12 w-full max-w-7xl`}>
           <h2 className="whitespace-pre-wrap max-w-prose font-bold text-lead">
             Collections

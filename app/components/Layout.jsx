@@ -1,8 +1,9 @@
 import {useEffect, Suspense} from 'react';
 import {Await, useMatches, useFetchers} from '@remix-run/react';
-import {Header} from './Header.jsx';
 import {Drawer, useDrawer} from '~/components/Drawer';
 import {CartLineItems, CartActions, CartSummary} from '~/components/Cart';
+import {Header} from './Header.jsx';
+import { SolLeonIcon } from './Decorative/SolLeonIcon.jsx';
 
 export function Layout({children, title}) {
   const {isOpen, openDrawer, closeDrawer} = useDrawer();
@@ -115,8 +116,8 @@ function CartDrawer({cart, close}) {
 
 function Footer() {
   return (
-    <>
-      <footer>Sol León</footer>
-    </>
+    <footer className={`flex justify-center w-full py-24 border border-t-black`} style={{background: "#BF953F"}}>
+      <SolLeonIcon />
+    </footer>
   );
 }
