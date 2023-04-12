@@ -5,7 +5,7 @@ import {CartLineItems, CartActions, CartSummary} from '~/components/Cart';
 import {Header} from './Header.jsx';
 import { SolLeonIcon } from './Decorative/SolLeonIcon.jsx';
 
-export function Layout({children, title}) {
+export function Layout({children, layout}) {
   const {isOpen, openDrawer, closeDrawer} = useDrawer();
   const fetchers = useFetchers();
   const [root] = useMatches();
@@ -25,7 +25,7 @@ export function Layout({children, title}) {
 
   return (
     <div className="flex flex-col min-h-screen items-center antialiased bg-neutral-50 ">
-      <Header>
+      <Header menu={layout.headerMenu}>
         <CartHeader cart={cart} openDrawer={openDrawer} />
       </Header>
       <main

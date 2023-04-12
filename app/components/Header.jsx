@@ -1,7 +1,6 @@
-import routes from '../static/routes.json';
 import { SolLeonIcon } from "./Decorative/SolLeonIcon"
 
-export function Header({children}) {
+export function Header({children, menu}) {
   function toggleNavlinks() {
     document.getElementById("navbar").classList.toggle("-translate-y-96")
   }
@@ -10,9 +9,9 @@ export function Header({children}) {
     return (
       <nav className={`fixed -z-10 overflow-hidden ease-out top-24 right-0 bg-black w-full px-5 py-8 -translate-y-96 transition-all duration-300 md:block md:z-0 md:translate-y-0 md:static md:w-fit`} id="navbar">
         <ul className={`flex flex-col gap-5 text-center md:flex-row`}>
-          {routes.map((route, i) => (
-            <li key={i}>
-              <a className={`hover:text-yellow-500 transition-all`} href={route.url}>{route.name}</a>
+          {menu.items.map((menuItem) => (
+            <li key={menuItem.id}>
+              <a className={`hover:text-yellow-500 transition-all`} href={menuItem.to}>{menuItem.title}</a>
             </li>
           ))}
         </ul>

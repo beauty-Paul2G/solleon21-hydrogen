@@ -14,6 +14,7 @@ import {Layout} from './components/Layout';
 import { ScrollUpButton } from './components/ScrollUpButton';
 import {defer} from '@shopify/remix-oxygen';
 import {CART_QUERY} from '~/queries/cart';
+import {parseMenu} from './lib/utils';
 
 export const links = () => {
   return [
@@ -37,12 +38,16 @@ export const meta = () => ({
 }
 );
 
-export async function loader({context, request}) {
-  const cartId = await context.session.get('cartId');
+export async function loader({context}) {
+  const [cartId, layout] = await Promise.all([
+    context.session.get('cartId'),
+    getLayoutData(context),
+  ]);
 
   return defer({
+    layout,
+    selectedLocale: context.storefront.i18n,
     cart: cartId ? getCart(context, cartId) : undefined,
-    layout: await context.storefront.query(LAYOUT_QUERY),
   });
 }
 
@@ -63,10 +68,27 @@ async function getCart({storefront}, cartId) {
   return cart;
 }
 
+async function getLayoutData({storefront}) {
+  const HEADER_MENU_HANDLE = 'main-menu';
+
+  const data = await storefront.query(LAYOUT_QUERY, {
+    variables: {
+      headerMenuHandle: HEADER_MENU_HANDLE,
+      language: storefront.i18n.language,
+    },
+  });
+
+  const customPrefixes = {BLOG: '', CATALOG: 'products'};
+
+  const headerMenu = data?.headerMenu
+      ? parseMenu(data.headerMenu, customPrefixes)
+      : undefined;
+
+  return {shop: data.shop, headerMenu};
+}
+
 export default function App() {
   const data = useLoaderData();
-
-  const {name} = data.layout.shop;
 
   return (
     <html lang="en">
@@ -75,7 +97,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Layout>
+        <Layout layout={data.layout}>
           <Outlet />
         </Layout>
         <ScrollRestoration />
@@ -87,10 +109,31 @@ export default function App() {
 }
 
 const LAYOUT_QUERY = `#graphql
-  query layout {
+query layoutMenus(
+    $language: LanguageCode
+    $headerMenuHandle: String!
+  ) @inContext(language: $language) {
     shop {
+      id
       name
       description
     }
+    headerMenu: menu(handle: $headerMenuHandle) {
+      id
+      items {
+        ...MenuItem
+        items {
+          ...MenuItem
+        }
+      }
+    }
+  }
+  fragment MenuItem on MenuItem {
+    id
+    resourceId
+    tags
+    title
+    type
+    url
   }
 `;

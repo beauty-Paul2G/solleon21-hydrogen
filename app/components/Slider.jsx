@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-import {useInterval} from './Hooks/useInterval';
+import {useInterval} from '~/Hooks/useInterval';
 import {BannerNavButtons} from './BannerNavButtons'
 
 export function Slider({imagesList, type, showDescriptions}) {
