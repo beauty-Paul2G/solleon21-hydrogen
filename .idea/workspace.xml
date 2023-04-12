@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="658a2be8-2148-4633-a50b-c364173fd72d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/lib/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Hooks/useInterval.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/Hooks/useInterval.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Layout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Layout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Slider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/root.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/root.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/routes.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/styles/tailwind-build.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/tailwind-build.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
@@ -60,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681335053658</updated>
-      <workItem from="1681335054698" duration="4025000" />
+      <workItem from="1681335054698" duration="5160000" />
     </task>
     <servers />
   </component>

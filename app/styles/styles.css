@@ -3,17 +3,9 @@
 
 :root {
     --golden-gradient: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
-    --color-capuccino: #A58062;
-    --color-greek-white: #F7F6EB;
-    --color-myrtle-green: #255D5E;
-    --color-esmerald: #258052;
-    --color-black-coal: #1E1E1E;
-    --color-camel: #BF9D6A;
-    --color-slate-green: #304743;
-    --color-dark-gray: #7F7F7F;
-    --color-warm-gray: #E2DFDE;
-    --color-roast-coffee: #5E4E3F;
-    --color-white: #FDFDFD;
+    --color-sand: #AF9D5A;
+    --color-light: #FFFFFF;
+    --color-dark: #FFFFFF;
 }
 
 html, body {
