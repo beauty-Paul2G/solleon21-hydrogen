@@ -117,7 +117,7 @@ function CartDrawer({cart, close}) {
 function Footer() {
   return (
     <footer className={`flex justify-center w-full py-24 border border-t-black`} style={{background: "#BF953F"}}>
-      <SolLeonIcon />
+      <SolLeonIcon width={`20vw`} color={`black`} />
     </footer>
   );
 }

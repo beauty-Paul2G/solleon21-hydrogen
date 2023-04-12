@@ -1,6 +1,17 @@
-export function SolLeonIcon() {
+export function SolLeonIcon({width,color}) {
+  const firma = {
+    fill: 'none',
+    stroke: color,
+    strokeMiterlimit: '10',
+    strokeWidth: '14px',
+    WebkitTextStrokeColor: '#282826',
+    WebkitTextStrokeWidth: '14px',
+    WebkitTextFillColor: 'none',
+  };
+  const labio = {fill: color};
+
   return (
-    <div style={{width: '20vw'}}>
+    <div style={{width: width}}>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.58 512">
         <path
           style={firma}
@@ -18,14 +29,3 @@ export function SolLeonIcon() {
     </div>
   );
 }
-
-const firma = {
-  fill: 'none',
-  stroke: '#282826',
-  strokeMiterlimit: '10',
-  strokeWidth: '14px',
-  WebkitTextStrokeColor: '#282826',
-  WebkitTextStrokeWidth: '14px',
-  WebkitTextFillColor: 'none',
-};
-const labio = {fill: '#282826'};

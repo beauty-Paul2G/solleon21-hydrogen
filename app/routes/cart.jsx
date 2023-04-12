@@ -3,6 +3,15 @@ import {json} from '@shopify/remix-oxygen';
 import {CartLineItems, CartActions, CartSummary} from '~/components/Cart';
 import {CART_QUERY} from '~/queries/cart';
 
+export const meta = () => {
+  return {
+    title: "Carrito - Sol León",
+    "og:title": "Carrito",
+    "og:decription": 'Carrito de productos que ni hay'
+  };
+};
+
+
 export async function loader({context}) {
   const cartId = await context.session.get('cartId');
 

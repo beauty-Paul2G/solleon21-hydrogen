@@ -11,6 +11,7 @@ import styles from './styles/styles.css';
 import appStyles from './styles/app.css'
 import favicon from '../public/favicon.svg';
 import {Layout} from './components/Layout';
+import { ScrollUpButton } from './components/ScrollUpButton';
 import {defer} from '@shopify/remix-oxygen';
 import {CART_QUERY} from '~/queries/cart';
 
@@ -20,17 +21,21 @@ export const links = () => {
     { rel: 'stylesheet', href: appStyles },
     { rel: 'stylesheet', href: styles },
     { rel: 'stylesheet', href: "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" },
-    { rel: 'stylesheet', href: "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" },
     { rel: 'preconnect', href: 'https://cdn.shopify.com' },
     { rel: 'preconnect', href: 'https://shop.app' },
     { rel: 'icon', type: 'image/svg+xml', href: favicon }
   ];
 };
 
-export const meta = () => ({
-  charset: 'utf-8',
+export const meta = () => ({ 
+  charset: 'utf-8', 
   viewport: 'width=device-width,initial-scale=1',
-});
+  "og:site_name": "Sol Leon",
+  "og:type": "website",
+  "og:url":  'https://www.solleon21.com/',
+  "og:image": 'https://www.solleon21.com/wp-content/uploads/2021/08/logo_header_x1920.png'
+}
+);
 
 export async function loader({context, request}) {
   const cartId = await context.session.get('cartId');
@@ -75,6 +80,7 @@ export default function App() {
         </Layout>
         <ScrollRestoration />
         <Scripts />
+        <ScrollUpButton/>
       </body>
     </html>
   );

@@ -9,7 +9,7 @@ import {banner, modelsClothes} from "../static/images.json"
 export const meta = () => {
   return {
     title: 'Sol León',
-    description: 'A custom storefront powered by Hydrogen',
+    description: 'Resumen de vida y trayectoria de Sol León',
   };
 };
 
@@ -21,14 +21,14 @@ export default function Index() {
   const {collections} = useLoaderData();
   return (
     <section className="flex items-center flex-col gap-4">
-      <Slider imageList={banner} type="banner"/>
+      <Slider imagesList={banner} type="banner"/>
       <div className={`flex flex-col gap-12 p-12 max-w-7xl`}>
         <TextSection section={textContents['biography']} id={"biografia"}/>
         <GoldenLine />
         <TextSection section={textContents['trajectory']} id={`trayectoria`}/>
         <GoldenLine />
         <TextSection section={textContents['modelsclothes']}  id={`prendasdemodelo`} />
-        <Slider imageList={modelsClothes} type="carrousel" showDescriptions/>
+        <Slider imagesList={modelsClothes} type="carrousel" showDescriptions/>
         <div className={`hidden p-12 w-full max-w-7xl`}>
           <h2 className="whitespace-pre-wrap max-w-prose font-bold text-lead">
             Collections

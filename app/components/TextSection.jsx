@@ -7,13 +7,13 @@ export function TextSection({section, id}) {
       {section.body.map((subsection, i) => {
         if (subsection.type === 'paragraph') {
           return (
-            <p className={`text-justify mb-3`} key={i}>
+            <p className={`text-justify mb-3 text-lg leading-8`} key={i}>
               {subsection.content}
             </p>
           );
         } else if (subsection.type === 'list') {
           return (
-            <ul className={`list-disc ps-6`} key={i}>
+            <ul className={`list-disc ps-6 text-lg leading-8`} key={i}>
               { subsection.content.map((listElement, i) => 
                 <li className={`pb-2`} key={i}>{listElement}</li>
               )}

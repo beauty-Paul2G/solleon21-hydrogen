@@ -1,6 +1,5 @@
 import routes from '../static/routes.json';
-const logoUrl =
-  'https://cdn.shopify.com/s/files/1/0300/5926/6141/files/logo.png?v=1628872647';
+import { SolLeonIcon } from "./Decorative/SolLeonIcon"
 
 export function Header({children}) {
   function toggleNavlinks() {
@@ -30,7 +29,7 @@ export function Header({children}) {
         className={`flex flex-row justify-between w-full items-center px-12 max-w-7xl`}
       >
         <a href="/" className="flex gap-12 h-auto">
-          <img src={logoUrl} alt="..."></img>
+        <SolLeonIcon width={`100px`} color={`white`} />
         </a>
         {displayNavlinks()}
         <button className={`static md:hidden`} onClick={toggleNavlinks}>
