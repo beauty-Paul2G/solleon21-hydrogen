@@ -1,10 +1,10 @@
 import {useLoaderData, Link} from '@remix-run/react';
-import {Image} from '@shopify/hydrogen';
 import {Slider} from '~/components/Slider';
 import {TextSection} from '../components/TextSection.jsx';
 import {GoldenLine} from '~/components/Decorative/GoldenLine.jsx';
 import textContents from '../static/textContents.json';
-import {banner, modelsClothes} from "../static/images.json"
+import {modelsClothes} from "../static/images.json"
+import singleBanner from "../../public/main-banner.jpg"
 
 export const meta = () => {
   return {
@@ -19,9 +19,15 @@ export async function loader({context}) {
 
 export default function Index() {
   const {collections} = useLoaderData();
+  console.log(singleBanner)
   return (
     <section className="flex items-center flex-col gap-4">
-      <Slider imagesList={banner} type="banner"/>
+      <div className="relative">
+        <a href="https://solbeautyandcare.com.mx" target="_blank">
+          <img className="pointer-events-none" src={singleBanner} alt={"Bienvenido a Sol Leon 21"}/>
+        </a>
+        <a href="https://solbeautyandcare.com.mx" className=" hidden absolute z-10 cursor-pointer rounded-xl" style={{width: "24%", height: "4.5%", top: "65%", left: "18%"}} />
+      </div>
       <div className={`flex flex-col gap-12 p-12 max-w-7xl`}>
         <TextSection section={textContents['biography']} id={"biografia"}/>
         <GoldenLine />

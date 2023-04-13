@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="658a2be8-2148-4633-a50b-c364173fd72d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/main-banner.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/styles/tailwind-build.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/tailwind-build.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +31,8 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "refactor/rework-header",
-    "last_opened_file_path": "/home/dev-04/Documentos/projects/web-solleon21-hydrogen",
+    "git-widget-placeholder": "refactor/rework-banner",
+    "last_opened_file_path": "/home/dev-04/Documentos/projects/web-solleon21-hydrogen/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -43,6 +43,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app" />
     </key>
@@ -55,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1681335053658</updated>
-      <workItem from="1681335054698" duration="5160000" />
+      <workItem from="1681335054698" duration="8935000" />
     </task>
     <servers />
   </component>
