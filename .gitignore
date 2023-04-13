@@ -68,3 +68,4 @@ $RECYCLE.BIN/
 
 /dist
 /app/styles/tailwind-build.css
+/.idea
