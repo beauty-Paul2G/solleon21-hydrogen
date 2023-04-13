@@ -67,5 +67,5 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/linux,windows,react,remix
 
 /dist
-/app/styles/tailwind-build.css
 /.idea
+app/styles/tailwind-build.css
