@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="658a2be8-2148-4633-a50b-c364173fd72d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/main-banner.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/styles/tailwind-build.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/tailwind-build.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +28,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "refactor/rework-banner",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/home/dev-04/Documentos/projects/web-solleon21-hydrogen/public",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
